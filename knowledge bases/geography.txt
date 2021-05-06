@@ -1,0 +1,13 @@
+fact: (cityof chicago illinois)
+fact: (cityof evanston illinois)
+fact: (capitalof springfield illinois)
+fact: (cityof nyc newyork)
+fact: (cityof manhattan newyork)
+fact: (capitalof albany newyork)
+fact: (stateof illinois usa)
+fact: (stateof newyork usa)
+
+
+rule: ((capitalof ?x ?y)) -> (cityof ?x ?y)
+rule: ((cityof ?x ?y) (stateof ?y ?z)) -> (cityincountry ?x ?z)
+

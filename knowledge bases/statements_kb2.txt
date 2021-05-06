@@ -1,0 +1,4 @@
+fact: (isa Dog Mammal)
+fact: (isa Mammal Animal)
+
+rule: ((isa ?x ?y) (isa ?y ?z)) -> (isa ?x ?z)
